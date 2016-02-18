@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uit.ktmt2010.tcpclient.LoginActivity" 
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:text="ĐẠI HỌC QUỐC GIA TP. HỒ CHÍ MINH"
+        android:textColor="#FFC717"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFC717" />
+    <TextView
+        android:id="@+id/textView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="KHOA KỸ THUẬT MÁY TÍNH"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="#FFC717" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_uit"
+        android:layout_gravity="center_horizontal" />
+    
+    <TextView
+        android:id="@+id/textView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+         android:layout_marginTop="20dp"
+        android:text="KHOÁ LUẬN TỐT NGHIỆP"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#cb4488" />
+    
+    
+    
+    <TextView
+        android:id="@+id/textView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+       
+        android:text="NGHIÊN CỨU THIẾT KẾ"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+    
+    <TextView
+        android:id="@+id/textView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="MẠCH ĐO CÔNG SUẤT TIÊU THỤ ĐIỆN MỘT PHA"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+    
+    <TextView
+        android:id="@+id/textView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="GIAO TIẾP KHÔNG DÂY IEEE 802.11b/g"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+    
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <EditText
+        android:id="@+id/editText_matkhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:ems="5"
+        android:inputType="textPassword"
+        android:textColorHint="@color/abc_search_url_text_holo"
+        style="@style/TextviewStyle.White"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/btnStyleShakespeare"
+            android:text="Đăng nhập" />
+
+        <CheckBox
+            android:id="@+id/checkBox_luu_matkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle.White"
+            android:text="Ghi nhớ"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

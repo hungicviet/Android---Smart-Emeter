@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Emeter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_btn_Connect">Kết nối</string>
+    <string name="string_btn_Disconnect">Ngắt</string>
+    <string name="string_btn_OK">OK</string>
+    <string name="string_text_password">Mật khẩu</string>
+    <string name="string_text_IPaddr">Server Address</string>
+    <string name="string_ti_Port">Server Port</string>
+    <string name="title_activity_server_config">ServerConfig</string>
+    <string name="title_activity_display_values">DisplayValuesActivity</string>
+    <string name="string_voltage">Điện áp</string>
+
+</resources>

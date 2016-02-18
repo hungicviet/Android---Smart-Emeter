@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/layout_V"
+        style="@style/DisplayValue">
+        <TextView
+         	android:id="@+id/TextView0004"
+         	style="@style/TextviewStyle.White"
+            android:text="Điện áp"/>
+        <TextView
+            android:id="@+id/value_vol"
+            style="@style/TextViewValue"
+            android:background="@drawable/border_style_value"
+            android:text="0.000"/>
+        <TextView
+            android:id="@+id/TextView0006"
+            style="@style/TextViewDV"
+            android:text="V" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_A"
+        style="@style/DisplayValue">
+        <TextView
+            android:id="@+id/TextView0002"
+            style="@style/TextviewStyle.White"
+            android:text="Dòng điện"/>
+
+       <TextView
+            android:id="@+id/value_current"
+            style="@style/TextViewValue"
+            android:background="@drawable/border_style_value"
+            android:text="0.000" />
+
+       <TextView
+            android:id="@+id/TextView0001"
+            style="@style/TextViewDV"
+            android:text="A" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_W"
+        style="@style/DisplayValue">
+        <TextView
+            android:id="@+id/TextView0003"
+            style="@style/TextviewStyle.White"
+            android:text="Công suất"/>
+
+       <TextView
+            android:id="@+id/value_power"
+            style="@style/TextViewValue"
+            android:background="@drawable/border_style_value"
+            android:text="0.000" />
+
+       <TextView
+            android:id="@+id/TextView0005"
+            style="@style/TextViewDV"
+            android:text="W" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_Wh"
+        style="@style/DisplayValue">
+        <TextView
+            android:id="@+id/TextView0007"
+            style="@style/TextviewStyle.White"
+            android:text="Điện năng"/>
+
+       <TextView
+            android:id="@+id/value_kWh"
+            style="@style/TextViewValue"
+            android:background="@drawable/border_style_value"
+            android:text="0.000" />
+
+       <TextView
+            android:id="@+id/TextView0008"
+            style="@style/TextViewDV"
+            android:text="Wh" />
+    </LinearLayout>
+    
+    <LinearLayout
+       	android:id="@+id/layout_Hz"
+        style="@style/DisplayValue">
+        <TextView
+            android:id="@+id/TextView0009"
+            style="@style/TextviewStyle.White"
+            android:text="Tần số"/>
+
+       <TextView
+            android:id="@+id/value_Hz"
+            style="@style/TextViewValue"
+            android:background="@drawable/border_style_value"
+            android:text="0.000" />
+
+       <TextView
+            android:id="@+id/TextView0010"
+            style="@style/TextViewDV"
+            android:text="Hz" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/boder_style">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_IP"
+                style="@style/TextviewStyle.White"
+                android:layout_width="140dp"
+                android:textSize="10sp"
+                android:layout_marginBottom="0dp"
+                android:text="IP" />
+
+            <TextView
+                android:id="@+id/textView_Port"
+                style="@style/TextviewStyle.White"
+                android:layout_width="140dp"
+                android:textSize="10sp"
+                android:text="PORT" />
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/tgl_Connect"
+            style="@style/togglePower"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="ToggleButton" 
+            android:textSize="12sp"
+          	android:checked="false"
+            android:textOn="Ngắt"
+            android:textOff="Kết nối"/>
+
+        <ToggleButton
+            android:id="@+id/tgl_Control_On_Off"
+            style="@style/togglePower"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="ToggleButton"
+            android:checked="true"
+            android:textOff="MỞ NGUỒN"
+            android:textOn="TẮT NGUỒN"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_style"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <ToggleButton
+                    android:id="@+id/tgl_dv1"
+                    style="@style/togglePower"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:textOff="MỞ ĐÈN"
+                    android:textOn="TẮT ĐÈN"
+                    android:textSize="10sp" />
+
+                <ToggleButton
+                    android:id="@+id/tgl_dv2"
+                    style="@style/togglePower"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:textOff="MỞ QUẠT"
+                    android:textOn="TẮT QUẠT"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:text="Trạng thái" />
+    
+</LinearLayout>
